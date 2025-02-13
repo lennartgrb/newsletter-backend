@@ -24,7 +24,7 @@ jobs:
           bun run build
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./app -r
+        run: zip release.zip ./app
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
