@@ -72,7 +72,7 @@ subscriber.post("/", async (c) => {
   }
 });
 
-subscriber.delete("/:id", async (c) => {
+subscriber.delete("/delete/:id", async (c) => {
   const id = c.req.param("id");
 
   try {
